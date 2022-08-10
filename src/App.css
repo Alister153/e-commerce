@@ -398,4 +398,7 @@ main .product-details .btn-container .addTo svg {
   main .product-details .product-details--wrapper .btn-container .amt-btn {
     width: 100px;
   }
+  main .product-details .product-details--wrapper .btn-container .addTo {
+    width: 50%;
+  }
 }
