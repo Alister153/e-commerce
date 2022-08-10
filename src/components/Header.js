@@ -145,7 +145,7 @@ function Header() {
             </svg>
           </figure>
           <figure className="profile">
-            <img src={require("../images/image-avatar.png")}></img>
+            <img src={require("../images/Zoro.jpg")}></img>
           </figure>
           <div className={cartVisibility ? "cart-items active" : "cart-items"}>
             <p className="cart-title">Cart</p>

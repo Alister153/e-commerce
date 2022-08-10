@@ -241,6 +241,10 @@ nav .cart-pro .cart-items.active .checkout-btn {
     width: 100%;
     height: 5%;
   }
+nav .cart-pro .cart-items.active {
+  width: 300px;
+  left: -175%;
+}
 }
 /* Main */
 main {
