@@ -177,18 +177,18 @@ nav .cart-pro .cart-items.active .checkout-btn {
   background-color: darkorange;
 }
 @media only screen and (max-width: 1000px) {
-  nav{
+  nav {
     padding-left: 0px;
   }
   nav .logo-cate {
     position: relative;
   }
-  nav .logo-cate .logo{
+  nav .logo-cate .logo {
     margin-left: 0px;
     margin-right: 0px;
     display: flex;
     align-items: center;
-    }
+  }
   nav .logo-cate .logo * {
     margin: 0px 10px;
   }
@@ -215,10 +215,10 @@ nav .cart-pro .cart-items.active .checkout-btn {
     z-index: 99;
     transform: rotateY(0deg) translateX(0px);
   }
-  .overlay{
+  .overlay {
     display: none;
   }
-  .overlay.active{
+  .overlay.active {
     position: fixed;
     display: block;
     top: 0%;
@@ -356,30 +356,39 @@ main .product-details .btn-container .addTo * {
 main .product-details .btn-container .addTo svg {
   fill: white;
 }
-@media only screen and (max-width: 1000px){
-    main{
-        padding: 0px;
-        flex-direction: column;
-    }
-    main .product-img{
-        width: 100%;
-    }
-    main .product-img .main-img img{
-        border-radius: 0px;
-    }
-    main .product-img .sub-img{
-        display: none;
-    }
-    main .product-details{
-        width: 100%;
-    }
-    main .product-details .product-details--wrapper{
-        padding: 0px 10px;
-        width: 80%;
-    }
-    main .product-details .product-details--wrapper .price-container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+@media only screen and (max-width: 1000px) {
+  main {
+    padding: 0px;
+    flex-direction: column;
+  }
+  main .product-img {
+    width: 100%;
+  }
+  main .product-img .main-img img {
+    border-radius: 0px;
+  }
+  main .product-img .sub-img {
+    display: none;
+  }
+  main .product-details {
+    width: 100%;
+  }
+  main .product-details .product-details--wrapper {
+    padding: 0px 10px;
+    width: 80%;
+  }
+  main .product-details .product-details--wrapper .price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .product-img .main-img {
+    width: 100%;
+  }
+  main .product-details {
+    padding: 0px;
+  }
+  main .product-details .product-details--wrapper .btn-container .amt-btn{
+    width: 100px;
+  }
 }
