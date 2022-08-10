@@ -79,6 +79,8 @@ function Header() {
               id={slider === "categories" && slider}
               onClick={() => {
                 setSlider("categories");
+                setMenu(false);
+                setOverlay(false);
               }}
             >
               Collections
@@ -99,6 +101,8 @@ function Header() {
               onClick={() => {
                 setCategory('womens')
                 setSlider("women");
+                setMenu(false);
+                setOverlay(false);
               }}
             >
               Women
@@ -108,6 +112,8 @@ function Header() {
               id={slider === "about" && slider}
               onClick={() => {
                 setSlider("about");
+                setMenu(false);
+                setOverlay(false);
               }}
             >
               About
@@ -117,6 +123,8 @@ function Header() {
               id={slider === "contact" && slider}
               onClick={() => {
                 setSlider("contact");
+                setMenu(false);
+                setOverlay(false);
               }}
             >
               Contact

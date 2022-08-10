@@ -177,12 +177,17 @@ nav .cart-pro .cart-items.active .checkout-btn {
   background-color: darkorange;
 }
 @media only screen and (max-width: 1000px) {
+  nav{
+    padding-left: 0px;
+  }
   nav .logo-cate {
     position: relative;
   }
   nav .logo-cate .logo{
     margin-left: 0px;
     margin-right: 0px;
+    display: flex;
+    align-items: center;
     }
   nav .logo-cate .logo * {
     margin: 0px 10px;
