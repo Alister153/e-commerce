@@ -54,6 +54,7 @@ function Main(props) {
   useEffect(() => {
     setTitle(product_Title[category]);
     setInCart(false);
+    setQuantity(0)
   }, [category]);
 
   return (

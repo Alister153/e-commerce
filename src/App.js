@@ -14,13 +14,7 @@ function App() {
       <cart.Provider value={[cartItems, setCartItems]}>
         <categories.Provider value={[category, setCategory]}>
           <Header></Header>
-          <Router>
-            <Routes>
-              <Route path="/" element={<Main></Main>}></Route>
-              <Route path="/mens" element={<Main></Main>}></Route>
-              <Route path="/womens" element={<Main></Main>}></Route>
-            </Routes>
-          </Router>
+          <Main></Main>
         </categories.Provider>
       </cart.Provider>
     </div>
