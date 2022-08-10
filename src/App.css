@@ -75,6 +75,7 @@ nav .logo-cate ul #contact ~ .slider {
 nav .cart-pro {
   position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 nav .cart-pro figure {
@@ -178,7 +179,13 @@ nav .cart-pro .cart-items.active .checkout-btn {
 }
 @media only screen and (max-width: 1000px) {
   nav {
-    padding-left: 0px;
+    padding: 0px;
+  }
+  nav .cart-pro {
+    width: 120px;
+  }
+  nav .cart-pro figure {
+    margin: 0px;
   }
   nav .logo-cate {
     position: relative;
@@ -388,7 +395,7 @@ main .product-details .btn-container .addTo svg {
   main .product-details {
     padding: 0px;
   }
-  main .product-details .product-details--wrapper .btn-container .amt-btn{
+  main .product-details .product-details--wrapper .btn-container .amt-btn {
     width: 100px;
   }
 }
