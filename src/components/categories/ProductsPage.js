@@ -12,7 +12,11 @@ function ProductsPage() {
   const handleClick = (item) => {
     navigate(`/Product/${item.title}`, { state: item });
   };
-
+  const calculatePrice = (price, d) => {
+    const newP =
+      parseInt(price.substring(1)) - (parseInt(price.substring(1)) * d) / 100;
+    return `$${newP}`;
+  };
   const handleCheck = (e) => {
     const box = document.getElementsByClassName("filterCheck");
     const { id } = e.target;
@@ -79,13 +83,16 @@ function ProductsPage() {
                   handleClick(d);
                 }}
               >
-                <img src={d.img[0]}></img>
+                <figure className="img--wrapper"><img src={d.img[0]}></img></figure>
                 <div className="description">
                   <div className="title">
                     <p>{d.title}</p>
                   </div>
                   <span className="price-view">
-                    <p className="price">{d.price}</p>
+                    <p className="price">
+                      {calculatePrice(d.price, d.discount)}
+                    </p>
+                    {d.discount > 0&& <p className="discount">{d.discount}%</p>}
                     <button
                       onClick={() => {
                         handleClick(d);
