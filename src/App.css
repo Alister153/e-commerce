@@ -36,12 +36,12 @@ nav:after {
   height: 1px;
   background-color: rgb(202, 202, 202);
 }
-nav .logo{
+nav .logo {
   cursor: pointer;
   transition: box-shadow 500ms ease;
   padding: 5px;
 }
-nav .logo:hover{
+nav .logo:hover {
   box-shadow: 0px 0px 5px orange;
 }
 nav .logo-cate {
@@ -595,7 +595,7 @@ main .full-view.active .btns .cross {
   left: 0%;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   nav {
     padding: 0px;
   }
@@ -665,7 +665,6 @@ main .full-view.active .btns .cross {
   }
   main .product-img .main-img img {
     border-radius: 0px;
-
   }
   main .product-img .sub-img {
     display: none;
@@ -731,6 +730,14 @@ main .full-view.active .btns .cross {
   }
 
   /* Collections */
+  .layout--wrapper {
+    columns: 3;
+  }
+  .layout--wrapper .img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 500px) {
   .layout--wrapper {
     columns: 2;
   }
